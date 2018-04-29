@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  thymeleaf:
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    check-template: true
+    cache: false
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: peter870630
+
+  hibernate:
+    show_sql: true
+    format_sql: true
+    ejb.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hbm2ddl.auto: update
+
+  jpa:
+    generate-ddl: true

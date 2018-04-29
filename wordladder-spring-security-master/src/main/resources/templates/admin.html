@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <h1 th:inline="text">你好， [[${#httpServletRequest.remoteUser}]]!</h1>
+        <div th:text="${ladder}"></div>
+        <p><a th:href="@{/user}">前往普通用户界面</a></p>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="退出"/>
+        </form>
+    </body>
+</html>
