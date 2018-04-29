@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="RESTful_service:Web2 exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/RESTful_service_Web2_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="RESTful_service/web/Web2" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="RESTful_service" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
